@@ -7,8 +7,12 @@
     <title>Document</title>
   </head>
   <style>
+    h1,
+    p {
+      margin: 0;
+    }
     .tomato {
-      background-color: tomato;
+      background-color: black;
     }
     .mintcream {
       background-color: mintcream;
@@ -24,43 +28,131 @@
     .gold {
       background-color: gold;
     }
+
+    .flex {
+      display: flex;
+    }
     .navigation {
       height: 80px;
+      /* New Point: Align-Items */
+      align-items: flex-end;
+      justify-content: space-between;
     }
     .hero {
-      height: calc(100vh - 80px);
-    }
-
-    .page-description {
-      height: 600px;
+      height: 500px;
+      /* Image Style */
+      background-image: url(/img/test-img.jpg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
     }
 
     .carousel,
-    .news,
     .articles {
       height: 250px;
     }
-    .footer : {
+
+    .carousel {
+      align-items: center;
+    }
+    .footer {
       height: 60px;
       background-color: white;
+    }
+    .navigation img {
+      width: 60px;
+    }
+
+    .page-desc-heading,
+    .page-desc-text {
+      text-align: center;
+    }
+
+    .carousel-item {
+      width: 25%;
+      height: 180px;
+      margin: 0 20px;
+      background: tomato;
+    }
+
+    .carousel-item:first-child {
+      margin-left: 0;
+    }
+    .carousel-item:last-child {
+      margin-right: 0;
+    }
+    .article-img {
+      width: 50%;
+      object-fit: cover;
+      object-position: center;
     }
   </style>
   <body>
     <div class="main">
-      <nav class="navigation tomato">
-        <img
-          src="https://png.pngtree.com/png-vector/20200921/ourmid/pngtree-red-and-black-logo-png-image_2348180.jpg"
-          alt=""
-        />
+      <nav class="navigation tomato flex">
+        <img src="/img/logo-img.png" alt="" />
         <div class="navigation-links">
           <a href="">Contacts</a><a href="">Above</a><a href="">Team</a>
         </div>
       </nav>
       <div class="hero mintcream"></div>
-      <div class="page-description linen"></div>
-      <div class="carousel tomato"></div>
-      <div class="news salmon"></div>
-      <div class="articles gold"></div>
+      <div class="page-description linen">
+        <h1 class="page-desc-heading">Heading Section</h1>
+        <p class="page-desc-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+          dignissimos numquam minus harum illum dolorum pariatur ab. Nulla,
+          quidem facere. Delectus vel nemo id blanditiis minima nulla. Minima,
+          reprehenderit atque. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Voluptates quam error, animi ipsam officia eligendi
+          odit libero voluptate esse quis, illo aut earum eum mollitia labore
+          repudiandae eaque, enim accusamus.
+        </p>
+      </div>
+      <div class="carousel tomato flex">
+        <div class="carousel-item"></div>
+        <div class="carousel-item"></div>
+        <div class="carousel-item"></div>
+        <div class="carousel-item"></div>
+      </div>
+      <div class="news salmon flex">
+        <div class="new-column">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+          repellendus accusantium velit veritatis atque nostrum exercitationem
+          nam consequatur ad illum modi itaque voluptas magni, quisquam aliquid,
+          saepe asperiores. Incidunt, tenetur. Lorem, ipsum dolor sit amet
+          consectetur adipisicing elit. Veniam, voluptatum. In, dolores fugiat?
+          Iste fugit voluptatem inventore blanditiis? Quibusdam voluptatum
+          voluptate laborum blanditiis inventore modi officia ducimus aliquam
+          cum aperiam!
+        </div>
+        <div class="new-column">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum expedita
+          quisquam quidem excepturi possimus unde. Repellendus sit alias fugit
+          itaque necessitatibus atque sequi aspernatur mollitia nam, eos
+          corrupti eum et? Lorem ipsum, dolor sit amet consectetur adipisicing
+          elit. Mollitia repudiandae quod placeat fugit facere. Totam ipsam quos
+          nostrum fuga modi, nisi eum nulla, asperiores mollitia inventore
+          eligendi repudiandae explicabo quaerat.
+        </div>
+      </div>
+      <div class="articles flex gold">
+        <div class="article-col flex">
+          <img
+            class="article-img"
+            src="/img/ella-jardim-M0zs81FNm6s-unsplash.jpg"
+            alt=""
+          />
+          <h2>Sample text</h2>
+        </div>
+        <div class="article-col flex">
+          <img
+            class="article-img"
+            src="img//pexels-lil-artsy-1925536.jpg"
+            alt=""
+          />
+          <h2>Sample text</h2>
+        </div>
+      </div>
       <footer class="footer"></footer>
     </div>
   </body>
