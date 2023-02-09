@@ -81,10 +81,21 @@
     .carousel-item:last-child {
       margin-right: 0;
     }
+    .article-col {
+      width: 50%;
+      /* Alighn Items */
+      align-items: center;
+    }
     .article-img {
       width: 50%;
+      height: 100%;
       object-fit: cover;
       object-position: center;
+    }
+
+    .article-title {
+      width: 50%;
+      text-align: center;
     }
   </style>
   <body>
@@ -142,7 +153,9 @@
             src="/img/ella-jardim-M0zs81FNm6s-unsplash.jpg"
             alt=""
           />
-          <h2>Sample text</h2>
+          <div class="article-title">
+            <h2>Sample text</h2>
+          </div>
         </div>
         <div class="article-col flex">
           <img
@@ -150,7 +163,9 @@
             src="img//pexels-lil-artsy-1925536.jpg"
             alt=""
           />
-          <h2>Sample text</h2>
+          <div class="article-title">
+            <h2>Sample text</h2>
+          </div>
         </div>
       </div>
       <footer class="footer"></footer>
