@@ -11,76 +11,72 @@
       margin: 0;
     }
     h1,
+    h2,
+    h3,
     p {
       margin: 0;
     }
-    .tomato {
+
+    .bg-color {
+      background-color: #e1e3e5;
+    }
+    .element {
       background-color: black;
-    }
-    .mintcream {
-      background-color: mintcream;
-    }
-
-    .linen {
-      background-color: linen;
-    }
-    .salmon {
-      background-color: salmon;
-    }
-
-    .gold {
-      background-color: gold;
     }
 
     .flex {
       display: flex;
     }
 
+    .top-margin {
+      margin-top: 20px;
+    }
+
     .main {
       max-width: 900px;
+      padding: 20px;
       margin: 0 auto;
     }
     .navigation {
-      height: 80px;
+      height: 30px;
       /* New Point: Align-Items */
       align-items: flex-end;
       justify-content: space-between;
     }
-    .hero {
-      height: 500px;
-      /* Image Style */
-      background-image: url(/img/test-img.jpg);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
+
+    .nav-icon {
+      height: 30px;
+      width: 150px;
     }
 
-    .carousel,
-    .articles {
-      height: 250px;
+    .nav-link {
+      height: 20px;
+      width: 120px;
+      margin: 0 10px;
+    }
+
+    .nav-link:last-child {
+      margin-right: 0;
+    }
+
+    .hero {
+      height: 300px;
+      width: 100%;
+      /* Image Style */
+    }
+
+    .page-desc-heading {
+      text-align: center;
     }
 
     .carousel {
       align-items: center;
     }
-    .footer {
-      height: 60px;
-      background-color: white;
-    }
-    .navigation img {
-      width: 60px;
-    }
-
-    .page-desc-heading,
-    .page-desc-text {
-      text-align: center;
-    }
 
     .carousel-item {
       width: 25%;
-      height: 180px;
-      margin: 0 20px;
-      background: tomato;
+      height: 120px;
+      margin: 0 10px;
     }
 
     .carousel-item:first-child {
@@ -89,6 +85,11 @@
     .carousel-item:last-child {
       margin-right: 0;
     }
+
+    .footer {
+      height: 30px;
+    }
+
     .article-col {
       width: 50%;
       /* Alighn Items */
@@ -96,87 +97,79 @@
     }
     .article-img {
       width: 50%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center;
+      height: 120px;
     }
 
     .article-title {
       width: 50%;
       text-align: center;
     }
+
+    .article-title h3 {
+      margin: 10px 0 0;
+    }
   </style>
   <body>
-    <div class="main">
-      <nav class="navigation tomato flex">
-        <img src="/img/logo-img.png" alt="" />
-        <div class="navigation-links">
-          <a href="">Contacts</a><a href="">Above</a><a href="">Team</a>
+    <div class="main bg-color">
+      <nav class="navigation flex">
+        <div class="nav-icon element"></div>
+        <div class="flex navigation-links">
+          <div class="nav-link element"></div>
+          <div class="nav-link element"></div>
+          <div class="nav-link element"></div>
         </div>
       </nav>
-      <div class="hero mintcream"></div>
-      <div class="page-description linen">
+      <div class="hero element top-margin"></div>
+      <div class="page-description">
         <h1 class="page-desc-heading">Heading Section</h1>
         <p class="page-desc-text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
           dignissimos numquam minus harum illum dolorum pariatur ab. Nulla,
           quidem facere. Delectus vel nemo id blanditiis minima nulla. Minima,
           reprehenderit atque. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Voluptates quam error, animi ipsam officia eligendi
-          odit libero voluptate esse quis, illo aut earum eum mollitia labore
-          repudiandae eaque, enim accusamus.
+          adipisicing elit. Voluptates quam error, illo aut earum eum mollitia
+          labore repudiandae eaque, enim accusamus.
         </p>
       </div>
-      <div class="carousel tomato flex">
-        <div class="carousel-item"></div>
-        <div class="carousel-item"></div>
-        <div class="carousel-item"></div>
-        <div class="carousel-item"></div>
+      <div class="carousel flex top-margin">
+        <div class="carousel-item element"></div>
+        <div class="carousel-item element"></div>
+        <div class="carousel-item element"></div>
+        <div class="carousel-item element"></div>
       </div>
-      <div class="news salmon flex">
+      <div class="news top-margin flex">
         <div class="new-column">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
           repellendus accusantium velit veritatis atque nostrum exercitationem
           nam consequatur ad illum modi itaque voluptas magni, quisquam aliquid,
-          saepe asperiores. Incidunt, tenetur. Lorem, ipsum dolor sit amet
-          consectetur adipisicing elit. Veniam, voluptatum. In, dolores fugiat?
-          Iste fugit voluptatem inventore blanditiis? Quibusdam voluptatum
-          voluptate laborum blanditiis inventore modi officia ducimus aliquam
-          cum aperiam!
+          saepe asperiores. Incidunt, tenetur.
         </div>
         <div class="new-column">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum expedita
           quisquam quidem excepturi possimus unde. Repellendus sit alias fugit
           itaque necessitatibus atque sequi aspernatur mollitia nam, eos
-          corrupti eum et? Lorem ipsum, dolor sit amet consectetur adipisicing
-          elit. Mollitia repudiandae quod placeat fugit facere. Totam ipsam quos
-          nostrum fuga modi, nisi eum nulla, asperiores mollitia inventore
-          eligendi repudiandae explicabo quaerat.
+          corrupti eum et?
         </div>
       </div>
-      <div class="articles flex gold">
+      <div class="articles flex top-margin">
         <div class="article-col flex">
-          <img
-            class="article-img"
-            src="/img/ella-jardim-M0zs81FNm6s-unsplash.jpg"
-            alt=""
-          />
+          <div class="element article-img"></div>
+
           <div class="article-title">
             <h2>Sample text</h2>
+            <h3>Description</h3>
           </div>
         </div>
         <div class="article-col flex">
-          <img
-            class="article-img"
-            src="img//pexels-lil-artsy-1925536.jpg"
-            alt=""
-          />
+          <div class="article-img element"></div>
+
           <div class="article-title">
             <h2>Sample text</h2>
+            <h3>Description</h3>
           </div>
         </div>
       </div>
+      <footer class="footer element top-margin"></footer>
     </div>
-    <footer class="footer"></footer>
   </body>
 </html>
