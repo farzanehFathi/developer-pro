@@ -1,4 +1,6 @@
 @import url("https://fonts.cdnfonts.com/css/effra-heavy");
+@import url("https://fonts.cdnfonts.com/css/effra");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
 
 :root {
   --background-color: #fafafa;
@@ -7,10 +9,29 @@
   --mute-text-color: ;
 }
 
-ul {
-  list-style: none;
+body {
+  font-family: "Effra", sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+a {
   padding: 0;
   margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 h1 {
@@ -18,18 +39,54 @@ h1 {
   font-weight: 900;
 }
 
-h2 {
+h2,
+h3 {
   font-family: "Effra Medium", sans-serif;
 }
 
-h3 {
-  font-family: "Effra", sans-serif;
-}
-
-p {
-  font-family: "Effra light", sans-serif;
-}
 .bg-black {
   background-color: black;
   color: white;
+}
+
+.btn-white {
+  padding: 12px 32px;
+  background: white;
+  color: black;
+  border-radius: 40px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 80px;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-vector {
+  width: 40px;
+  height: 40px;
+}
+
+.brand-name {
+  margin-left: 10px;
+  font-size: 24px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+.nav-list {
+  display: flex;
+}
+.nav-item {
+  margin: 0 20px;
+}
+
+.navbar a {
+  margin-left: 40px;
 }
