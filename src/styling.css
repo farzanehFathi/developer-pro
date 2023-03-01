@@ -6,15 +6,19 @@
   --background-color: #fafafa;
   --object-color: #f5f5f5;
   --branding-color: #a8ff35;
-  --mute-text-color: ;
+  --mute-text-color: #8b8b8b;
 }
 
-body {
+/* ===--- Main Elements ---=== */
+
+body,
+button,
+a {
   font-family: "Effra", sans-serif;
   font-size: 18px;
-  margin: 0;
 }
 
+body,
 h1,
 h2,
 h3,
@@ -36,13 +40,16 @@ a {
 
 h1 {
   font-family: "Effra Heavy", sans-serif;
-  font-weight: 900;
+  font-size: 72px;
+  line-height: 80px;
 }
 
 h2,
 h3 {
   font-family: "Effra Medium", sans-serif;
 }
+
+/* ===--- Class Helpers ---=== */
 
 .bg-black {
   background-color: black;
@@ -56,6 +63,14 @@ h3 {
   border-radius: 40px;
 }
 
+.btn-branding {
+  padding: 16px 32px;
+  background-color: var(--branding-color);
+  color: black;
+  border-radius: 40px;
+}
+
+/* ===--- NAVBAR ---=== */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -89,4 +104,17 @@ h3 {
 
 .navbar a {
   margin-left: 40px;
+}
+
+/* ===--- Hero ---=== */
+
+.hero {
+  padding: 120px 30px 365px;
+  text-align: center;
+}
+
+.hero p {
+  color: var(--mute-text-color);
+  line-height: 27px;
+  margin: 24px 0 40px;
 }
