@@ -89,6 +89,10 @@ p {
   color: var(--mute-text-color);
 }
 
+.text-center {
+  text-align: center;
+}
+
 /* ===--- NAVBAR ---=== */
 .navbar {
   display: flex;
@@ -171,6 +175,36 @@ p {
   font-family: "Effra light", sans-serif;
 }
 
+/* ===--- Features ---=== */
+
 .features {
   padding: 140px;
+}
+
+.p-text {
+  margin-bottom: 290px;
+}
+
+.features h3 {
+  margin-bottom: 80px;
+}
+
+.brand-logo-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.brand-item {
+  flex: 1 1 0;
+  background-color: var(--frame-color);
+  border-radius: 8px;
+  padding: 40px;
+  padding-bottom: 40px;
+}
+
+.brand-item img {
+  max-height: 48px;
+  max-width: 190px;
+  object-fit: contain;
 }
