@@ -55,6 +55,11 @@ h3 {
   font-size: 64px;
   line-height: 76px;
 }
+
+h4 {
+  font-size: 36px;
+  line-height: 36px;
+}
 p {
   font-size: 18px;
   line-height: 27px;
@@ -264,4 +269,63 @@ p {
   margin: 0 auto;
   max-width: 800px;
   margin-bottom: 40px;
+}
+
+/* ===--- Plans ---=== */
+.plans {
+  padding: 140px;
+  text-align: center;
+}
+
+.plan-table {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+
+  height: max-content;
+}
+
+.plan-card {
+  width: 33%;
+  height: 1;
+  margin-right: 32px;
+  padding: 32px;
+  background-color: var(--background-color);
+  color: black;
+  border-radius: 16px;
+  text-align: left;
+}
+
+.plan-card:last-child {
+  margin: 0;
+}
+
+.plan-card h4 {
+  margin-bottom: 8px;
+}
+
+.plan-card p {
+  margin-bottom: 32px;
+}
+
+.plan-card hr {
+  margin-bottom: 40px;
+}
+
+.plan-card button {
+  position: relative;
+}
+
+.plan-card ul {
+  list-style-type: "\2714";
+  margin-left: 15px;
+}
+
+.plan-card ul li {
+  margin-bottom: 30px;
+  padding-left: 10px;
+}
+
+.price-tag {
+  font-size: 64px;
 }
