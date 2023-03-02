@@ -72,7 +72,7 @@ p {
 }
 
 .bg-branding {
-  background-color: var(--branding-color);
+  background-color: var(--branding-color) !important;
   color: black;
 }
 
@@ -97,7 +97,7 @@ p {
 
 .btn-branding {
   background-color: var(--branding-color);
-  border: 1px solid var(--branding-color);
+  border: 0;
   color: black;
 }
 
@@ -256,18 +256,16 @@ p {
 }
 
 .social-icon-frame {
-  display: flex;
   width: 124px;
   height: 124px;
   border-radius: 8px;
   background-color: white;
-  align-items: center;
-  justify-content: center;
 }
 
 .social-icon-frame img {
   width: 60px;
   height: 60px;
+  margin: 32px;
 }
 
 .social-posts-list {
@@ -286,6 +284,27 @@ p {
   text-align: center;
 }
 
+.toggle-switch {
+  margin: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.switch-frame {
+  margin: 0 30px;
+  width: 104px;
+  height: 52px;
+  border-radius: 99px;
+  background-color: white;
+}
+.switch-hover {
+  width: 36px;
+  height: 36px;
+  margin: 8px;
+  background-color: var(--branding-color);
+  border-radius: 99px;
+  border: 0;
+}
 .plan-table {
   margin-top: 40px;
   display: flex;
