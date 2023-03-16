@@ -128,15 +128,15 @@ p {
   color: black;
 }
 
+.btn-black {
+  color: white;
+  background-color: black;
+}
+
 .btn-branding {
   background-color: var(--branding-color);
   border: 0;
   color: black;
-}
-
-.btn-black {
-  color: white;
-  background-color: black;
 }
 
 /* ===--- NAVBAR ---=== */
@@ -152,12 +152,12 @@ p {
   align-items: center;
 }
 
-.logo-vector {
+.brand-logo img {
   width: 40px;
   height: 40px;
 }
 
-.brand-name {
+.brand-logo p {
   margin-left: 10px;
   font-size: 24px;
   font-family: "Inter", sans-serif;
@@ -188,29 +188,29 @@ p {
 
 /* ===--- New Tab ---=== */
 
-.frame-box {
-  max-width: 500px;
+.text-box-frame {
+  width: fit-content;
   margin: 60px auto;
   padding: 60px 80px;
   background-color: var(--secondary-backgraound-color);
   border-radius: 16px;
 }
 
-.frame {
+.text-box {
   display: flex;
   background-color: #030303;
-  padding: 27px 87px;
+  padding: 27px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-.logo-vector-30 {
+.text-box img {
   width: 30px;
   height: 30px;
-  margin-right: 16px;
+  margin: 0 16px;
 }
 
-.frame p {
+.text-box p {
   font-size: 24px;
   color: white;
   font-family: "Effra light", sans-serif;
