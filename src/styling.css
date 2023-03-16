@@ -3,10 +3,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap");
 
 :root {
-  --background-color: #fafafa;
-  --frame-color: #f5f5f5;
+  --primary-background-color: #fafafa;
+  --secondary-backgraound-color: #f5f5f5;
   --branding-color: #a8ff35;
-  --mute-text-color: #8b8b8b;
+  --mute-text-primary: #8b8b8b;
+  --mute-text-secondary: #87d322;
 }
 
 /* ===--- Main Elements ---=== */
@@ -66,6 +67,7 @@ p {
 }
 /* ===--- Class Helpers ---=== */
 
+/* background styles */
 .bg-black {
   background-color: black;
   color: white;
@@ -77,9 +79,39 @@ p {
 }
 
 .bg-gray {
-  background-color: var(--background-color);
+  background-color: var(--primary-background-color);
   color: black;
 }
+
+/* margin and paddings */
+
+.pd-140 {
+  padding: 140px;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+/* text styles */
+
+.text-center {
+  text-align: center;
+}
+
+.mute-text {
+  color: var(--mute-text-primary);
+}
+
+.mute-text-2 {
+  color: var(--mute-text-secondary);
+}
+
+/* button styles */
 
 .btn-12 {
   padding: 12px 32px;
@@ -105,18 +137,6 @@ p {
 .btn-black {
   color: white;
   background-color: black;
-}
-
-.mute-text {
-  color: var(--mute-text-color);
-}
-
-.mute-text-green {
-  color: #87d322;
-}
-
-.text-center {
-  text-align: center;
 }
 
 /* ===--- NAVBAR ---=== */
@@ -147,7 +167,7 @@ p {
 .nav-list {
   display: flex;
 }
-.nav-item {
+.nav-list li {
   margin: 0 20px;
 }
 
@@ -168,16 +188,11 @@ p {
 
 /* ===--- New Tab ---=== */
 
-.new-tab {
-  padding: 140px 30px;
-  text-align: center;
-}
-
 .frame-box {
   max-width: 500px;
   margin: 60px auto;
   padding: 60px 80px;
-  background-color: var(--frame-color);
+  background-color: var(--secondary-backgraound-color);
   border-radius: 16px;
 }
 
@@ -203,16 +218,8 @@ p {
 
 /* ===--- Features ---=== */
 
-.features {
-  padding: 140px;
-}
-
 .p-text {
   margin-bottom: 290px;
-}
-
-.features h3 {
-  margin-bottom: 80px;
 }
 
 .brand-logo-list {
@@ -221,24 +228,24 @@ p {
   margin-bottom: 32px;
 }
 
-.brand-item-frame {
+.brand-logo-list li {
   display: flex;
   width: 25%;
   margin-right: 32px;
-  background-color: var(--frame-color);
+  background-color: var(--secondary-backgraound-color);
   border-radius: 8px;
   height: 120px;
   align-items: center;
   justify-content: center;
 }
 
-.brand-item-frame img {
+.brand-logo-list img {
   max-height: 48px;
   max-width: 190px;
   margin: 0 auto;
 }
 
-.brand-item-frame:last-child {
+.brand-logo-list li:last-child {
   margin: 0;
 }
 
@@ -248,46 +255,32 @@ p {
 
 /* ===--- Social Media ---=== */
 
-.social-media {
-  padding: 140px;
-  text-align: center;
-  background-color: var(--background-color);
-}
-
-.social-icons-list {
+.social-icons {
   margin: 80px 0;
   display: flex;
   justify-content: space-between;
 }
 
-.social-icon-frame {
+.social-icons li {
   width: 124px;
   height: 124px;
   border-radius: 8px;
   background-color: white;
 }
 
-.social-icon-frame img {
+.social-icons img {
   width: 60px;
   height: 60px;
   margin: 32px;
 }
 
-.social-posts-list {
-  margin-bottom: 80px;
-}
-
-.social-post {
+.social-posts li {
   margin: 0 auto;
   max-width: 800px;
   margin-bottom: 40px;
 }
 
 /* ===--- Plans ---=== */
-.plans {
-  padding: 140px;
-  text-align: center;
-}
 
 .toggle-switch {
   margin: 40px;
@@ -368,24 +361,4 @@ p {
 
 .price-tag {
   font-size: 64px;
-}
-
-/* ===--- Join Us ---=== */
-
-.join-us {
-  padding: 140px;
-  text-align: center;
-}
-
-.mb-40 {
-  margin-bottom: 40px;
-}
-
-/* ===--- Footer ---=== */
-
-.footer {
-  padding: 30px 80px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
