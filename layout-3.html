@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout 3</title>
+    <style>
+      body,
+      h2,
+      p {
+        margin: 0;
+      }
+
+      h2 {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+
+      .container {
+        background: #e1e3e5;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      .element {
+        background-color: black;
+      }
+      .mb-20 {
+        margin-bottom: 20px;
+      }
+      .flex {
+        display: flex;
+      }
+      .text-center {
+        text-align: center;
+      }
+
+      .ml-20 {
+        margin-left: 20px;
+      }
+
+      .mr-20 {
+        margin-right: 20px;
+      }
+      .navigation {
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+
+      .nav-logo {
+        width: 20%;
+        height: 30px;
+      }
+
+      .nav-links {
+        width: 60%;
+        height: 20px;
+        justify-content: flex-end;
+      }
+
+      .nav-link {
+        width: 30%;
+        margin: 0 10px;
+      }
+
+      .nav-link:last-child {
+        margin-right: 0;
+      }
+
+      .carousel-wrapper {
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 10px;
+      }
+      .carousel-item {
+        width: calc(25% - 20px);
+        height: 120px;
+        margin: 10px;
+      }
+
+      .footer {
+        height: 50px;
+        width: calc(100% - 40px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation flex mb-20 ml-20 mr-20">
+        <div class="nav-logo element"></div>
+        <div class="nav-links flex">
+          <div class="nav-link element"></div>
+          <div class="nav-link element"></div>
+          <div class="nav-link element"></div>
+        </div>
+      </div>
+      <div class="heading text-center mb-20 ml-20 mr-20">
+        <h2 class="mb-20">Heading Section</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum quam
+          rem quisquam.
+        </p>
+      </div>
+      <div class="carousel-wrapper flex">
+        <div class="carousel-item element"></div>
+        <div class="carousel-item element"></div>
+        <div class="carousel-item element"></div>
+        <div class="carousel-item element"></div>
+        <div class="carousel-item element"></div>
+        <div class="carousel-item element"></div>
+        <div class="carousel-item element"></div>
+        <div class="carousel-item element"></div>
+      </div>
+      <div class="heading text-center mb-20 ml-20 mr-20">
+        <h2 class="mb-20">Heading Section</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis eos
+          maxime praesentium laudantium expedita alias atque reiciendis, odio
+          incidunt voluptatum doloremque enim nam, quae vel veritatis beatae
+          iste quo ad.
+        </p>
+      </div>
+      <div class="carousel-wrapper flex mb-20">
+        <div class="carousel-item element"></div>
+        <div class="carousel-item element"></div>
+        <div class="carousel-item element"></div>
+        <div class="carousel-item element"></div>
+        <div class="carousel-item element"></div>
+        <div class="carousel-item element"></div>
+        <div class="carousel-item element"></div>
+        <div class="carousel-item element"></div>
+      </div>
+      <div class="footer element ml-20 mr-20"></div>
+    </div>
+  </body>
+</html>
