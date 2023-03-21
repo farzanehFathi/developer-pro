@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout 1</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      .banner {
+        height: 120px;
+        background: #e5bc36;
+        margin-bottom: 20px;
+      }
+      .header {
+        height: 200px;
+        background: #2f4e88;
+        margin-bottom: 20px;
+      }
+      .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+
+      .nav-col {
+        background: #de0058;
+        text-align: center;
+        width: 25%;
+        margin: 0 20px;
+        padding: 10px 0;
+      }
+      .nav-col:first-child {
+        margin-left: 0;
+      }
+      .nav-col:last-child {
+        margin-right: 0;
+      }
+
+      .main {
+        height: 600px;
+        display: flex;
+        margin-bottom: 20px;
+      }
+
+      .about {
+        width: 60%;
+        height: 100%;
+        background: #05c69a;
+        margin-right: 20px;
+      }
+
+      .quick-links-container {
+        width: 40%;
+        height: 100%;
+      }
+
+      .quick-link {
+        width: 100%;
+        height: calc(50% - 10px);
+        margin-bottom: 20px;
+        background: #05c69a;
+      }
+
+      .quick-link:last-child {
+        margin: 0;
+      }
+
+      .footer {
+        height: 200px;
+        background: #fa4337;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="banner"></div>
+      <div class="header"></div>
+      <div class="navigation">
+        <div class="nav-col">Contact</div>
+        <div class="nav-col">About</div>
+        <div class="nav-col">Portfolio</div>
+        <div class="nav-col">Team</div>
+      </div>
+      <div class="main">
+        <div class="about"></div>
+        <div class="quick-links-container">
+          <div class="quick-link"></div>
+          <div class="quick-link"></div>
+        </div>
+      </div>
+      <div class="footer"></div>
+    </div>
+  </body>
+</html>
