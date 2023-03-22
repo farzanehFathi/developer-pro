@@ -236,8 +236,8 @@ p {
   background-color: var(--secondary-backgraound-color);
   border-radius: 8px;
   height: 120px;
-  width: calc(25% - 32px);
-  margin: 16px;
+  width: 22.5%;
+  margin: 1.25% 0.125%;
 
   display: flex;
   align-items: center;
@@ -247,7 +247,6 @@ p {
 .brand-logo-list img {
   max-width: 75%;
   max-height: 48px;
-  margin: 0 auto;
 }
 
 /* ===--- Social Media ---=== */
@@ -256,20 +255,25 @@ p {
   margin: 80px 0;
   display: flex;
   justify-content: space-between;
-  padding: 0 12px;
 }
 
 .social-icons li {
-  width: calc(12.5% - 24px);
-
-  margin: 0 12px;
+  width: 10%;
+  padding: 2.5%;
+  margin: 0 1.25%;
   border-radius: 8px;
   background-color: white;
 }
 
+.social-icons li:first-child {
+  margin-left: 0;
+}
+
+.social-icons li:last-child {
+  margin-right: 0;
+}
 .social-icons img {
-  width: 50%;
-  margin: 25% auto;
+  width: 100%;
 }
 
 .social-posts li {
