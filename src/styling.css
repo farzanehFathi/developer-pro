@@ -83,6 +83,11 @@ p {
   color: black;
 }
 
+.bg-dashed {
+  background: url(https://i.ibb.co/GPY8VTM/bg-hero.png) no-repeat center center;
+  background-size: cover;
+}
+
 /* margin and paddings */
 
 .pd-140 {
@@ -149,6 +154,7 @@ p {
   justify-content: space-between;
   align-items: center;
   padding: 30px 80px;
+  background: transparent !important;
 }
 
 .brand-logo {
@@ -184,6 +190,7 @@ p {
 .hero {
   padding: 120px 30px 365px;
   text-align: center;
+  background: transparent !important;
 }
 
 .hero p {
