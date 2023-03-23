@@ -37,6 +37,7 @@ ul {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 h1 {
@@ -70,6 +71,10 @@ p {
 /* background styles */
 .bg-black {
   background-color: black;
+  color: white;
+}
+
+.bg-black a {
   color: white;
 }
 
@@ -135,18 +140,21 @@ p {
 .btn-white {
   background-color: white;
   color: black;
+  border: 0;
   transition: all 200ms ease-in-out;
 }
 
 .btn-black {
   background-color: black;
   color: white;
+  border: 0;
   transition: all 200ms ease-in-out;
 }
 
 .btn-branding {
   background-color: var(--branding-color);
   color: black;
+  border: 0;
   transition: all 200ms ease-in-out;
 }
 
@@ -175,7 +183,6 @@ p {
 }
 
 .brand-logo {
-  color: white;
   display: flex;
   align-items: center;
 }
@@ -197,10 +204,9 @@ p {
 }
 .nav-list li {
   margin: 0 20px;
-  color: white;
 }
 
-.navbar a {
+.navbar button {
   margin-left: 40px;
 }
 
@@ -270,9 +276,9 @@ p {
 
 /* ===--- Features ---=== */
 
-/* .p-text {
+.p-text {
   margin-bottom: 290px;
-} */
+}
 
 .brand-logo-list {
   display: flex;
@@ -290,6 +296,10 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.brand-logo-list li:hover {
+  cursor: pointer;
 }
 
 .brand-logo-list img {
@@ -311,6 +321,11 @@ p {
   margin: 0 1.25%;
   border-radius: 8px;
   background-color: white;
+}
+
+.social-icons li:hover {
+  background-color: var(--branding-color);
+  cursor: pointer;
 }
 
 .social-icons li:first-child {
