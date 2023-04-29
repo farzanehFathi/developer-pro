@@ -95,7 +95,7 @@ p {
 
 /* margin and paddings */
 
-.pd-140 {
+.main-padding {
   padding: 140px;
 }
 
@@ -441,37 +441,65 @@ p {
     line-height: 1.5;
   }
 
-  .pd-140 {
+  .main-padding {
     padding: 80px 28px;
   }
 
-  .pd-124 {
-    padding: 80px 18px;
-  }
-
-  .mb-80 {
+  /* .mb-80 {
     margin-bottom: 80px;
   }
 
   .mb-40 {
     margin-bottom: 40px;
-  }
+  } */
 
-  .navbar {
-    flex-direction: column;
-  }
-
+  .navbar,
   .nav-list {
     flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar a {
+    margin-bottom: 40px;
   }
 
   .brand-logo {
     margin-bottom: 80px;
   }
 
-  .nav-list li {
-    margin-bottom: 40px;
-    text-align: center;
+  .navbar button {
+    display: block;
+    margin: 40px 0;
+  }
+
+  .outer-box {
+    width: fit-content;
+    margin: 18px auto;
+    padding: 24px;
+    background-color: var(--secondary-backgraound-color);
+    border-radius: 16px;
+  }
+
+  .inner-box {
+    padding: 22px;
+  }
+
+  .inner-box img {
+    width: 25px;
+    height: 25px;
+    margin: 0 12px;
+  }
+
+  .inner-box p {
+    font-size: 20px;
+  }
+
+  .x-mark {
+    font-size: 24px;
+  }
+
+  .x-mark:hover {
+    cursor: pointer;
   }
 
   .plan-table {
