@@ -339,6 +339,12 @@ p {
   width: 100%;
 }
 
+.social-posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .social-posts li {
   margin: 0 auto;
   max-width: 800px;
@@ -426,4 +432,14 @@ p {
 
 .price-tag {
   font-size: 64px;
+}
+
+@media (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-list {
+    flex-direction: column;
+  }
 }
