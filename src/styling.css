@@ -49,7 +49,7 @@ h1 {
 h2 {
   font-family: "Effra Medium", sans-serif;
   font-size: 72px;
-  line-height: 85px;
+  line-height: 1.25;
 }
 
 h3 {
@@ -345,12 +345,6 @@ p {
   align-items: center;
 }
 
-.social-posts li {
-  margin: 0 auto;
-  max-width: 800px;
-  margin-bottom: 40px;
-}
-
 /* ===--- Plans ---=== */
 
 .toggle-switch {
@@ -435,11 +429,63 @@ p {
 }
 
 @media (max-width: 800px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 36px;
+    line-height: 1.25;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .pd-140 {
+    padding: 80px 28px;
+  }
+
+  .pd-124 {
+    padding: 80px 18px;
+  }
+
+  .mb-80 {
+    margin-bottom: 80px;
+  }
+
+  .mb-40 {
+    margin-bottom: 40px;
+  }
+
   .navbar {
     flex-direction: column;
   }
 
   .nav-list {
     flex-direction: column;
+  }
+
+  .brand-logo {
+    margin-bottom: 80px;
+  }
+
+  .nav-list li {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .plan-table {
+    flex-direction: column;
+  }
+
+  .plan-card {
+    width: 90%;
+    margin-bottom: 24px;
+  }
+
+  .brand-logo-list li {
+    height: 74px;
+    width: 45%;
+    margin: 2.5% 0.25%;
   }
 }
